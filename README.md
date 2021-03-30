@@ -1,3 +1,3 @@
 # C_Projects
 
-Each branch contains a different project.
+Each file contains a different project.
