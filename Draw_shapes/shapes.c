@@ -93,10 +93,10 @@ int j;
 int k;
 int spaces;
 int stars;
-spaces = lines-1;
+spaces = (lines/2);
 stars = 1;
 printf("\n");
-for(i=0; i<lines; i++){
+for(i=0; i<(lines/2)+1; i++){
 	for(j=0; j<spaces; j++){
 		printf(" ");
 	}
@@ -104,12 +104,12 @@ for(i=0; i<lines; i++){
 		printf("* ");
 	}
 	printf("\n");
-	spaces =spaces-1;
-	stars = stars +1;
+	spaces = spaces-1;
+	stars = stars+1;
 }
 spaces=1;
-stars= stars - 2;
-for(i=0; i<lines-1; i++){
+stars=stars - 2;
+for(i=0; i<(lines/2); i++){
 	for(j=0; j<spaces; j++){
 		printf(" ");
 	}
@@ -117,7 +117,7 @@ for(i=0; i<lines-1; i++){
 		printf("* ");
 	}
 	printf("\n");
-	spaces =spaces+1;
+	spaces = spaces+1;
 	stars = stars -1;
 }
 printf("\n");

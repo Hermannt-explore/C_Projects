@@ -1,10 +1,6 @@
-output: shapes.o
-	gcc shapes.o -o shapes
-
-shell.o: shapes.c
+shapes:
 	gcc -c shapes.c
-
+	gcc shapes.o -o shapes
+	rm shapes.o 
 clean:
-	rm *.o
-fresh:
-	rm shapes
+	rm shapes 2> /\dev/null
