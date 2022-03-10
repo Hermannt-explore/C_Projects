@@ -1,3 +1,3 @@
 # C_Projects
 
-Each file contains a different project.
+Each folder contains a different project.
